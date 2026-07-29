@@ -16,7 +16,8 @@ spec:
     spec:
       containers:
       - name: mini-app
-        image: ghcr.io/pravallikachundi/mini-app:latest
+        image: mini-app:latest
+        imagePullPolicy: Never
         ports:
         - containerPort: 5000
         resources:
